@@ -21,7 +21,7 @@ Calculator.prototype.pingPong = function(goal) {
     }
   }
   return output;
-}
+};
 
 //the exports function activates the node: exports is provided by Node and lets us export things from one file and bring them into another. Technically, our constructor function and our pingPong method have now become part of a module. A module is a group of JavaScript functions and data that comprises some sort of functionality.
 exports.calculatorModule = Calculator;

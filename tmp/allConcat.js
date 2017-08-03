@@ -1,4 +1,4 @@
-//front end logic for ping-pong portion
+//ffffront end logic for ping-pong portion
 
 //this calls upon the calculator module in the export function on the pingpong javascript file
 var Whatever = require('./../js/pingpong.js').calculatorModule;
@@ -15,7 +15,7 @@ $(document).ready(function() {
   });
 });
 
-//front end logic for the form fill section
+//ffffront end logic for the form fill section
 
 $(document).ready(function(){
   $('#signup').submit(function(event){
