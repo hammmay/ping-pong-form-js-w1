@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<!--adds jquery through the bower_components folder-->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <!--    <script type="text/javascript" src="js/pingpong.js"></script> -->
 <!--script tag added below to reference front end js file, above is the backend -->
 <!--    <script type="text/javascript" src="js/pingpong-interface.js"></script> -->
     <!--but after browserify is installed and called to generate the build folder, the 2 src paths to the front and backend are turned into the new app.js file in the build folder-->
+<!--adds bootstrap through the bower_components folder, but make sure it's after jquery as bootstrap is dependant on jquery-->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
     <title>Ping Pong</title>
   </head>
   <body>
-    <form id="ping-pong-form">
-      <label for="goal">Enter a number:</label>
-      <input id="goal" type="number">
-      <button type="submit">Submit</button>
-    </form>
-    <form id="signup">
-      <label for="email">Enter your email:</label>
-      <input id="email" type="text">
-      <button type="submit">Submit</button>
-    </form>
-    <ul id="solution"></ul>
+    <div class="container">
+      <h1>Ping Pong!</h1>
+      <form id="ping-pong-form">
+        <div class="form-group">
+          <label for="goal">Enter a number:</label>
+          <input id="goal" type="number">
+          <button class="btn-success" type="submit">Submit</button>
+        </div>
+      </form>
+      <form id="signup">
+        <div class="form-group">
+          <label for="email">Enter your email:</label>
+          <input id="email" type="text">
+          <button class="btn-success" type="submit">Submit</button>
+        </div>
+      </form>
+      <ul id="solution"></ul>
+    </div>
   </body>
 </html>
